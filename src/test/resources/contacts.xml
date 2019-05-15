@@ -1,0 +1,31 @@
+<list>
+  <di.gen.addressbook.Model.ContactAtrs>
+    <name>nameX 0</name>
+    <lname>lname 0</lname>
+    <id>0</id>
+    <group>java1</group>
+    <creation>false</creation>
+  </di.gen.addressbook.Model.ContactAtrs>
+  <di.gen.addressbook.Model.ContactAtrs>
+    <name>nameX 1</name>
+    <lname>lname 1</lname>
+    <id>0</id>
+    <group>java1</group>
+    <creation>false</creation>
+  </di.gen.addressbook.Model.ContactAtrs>
+  <di.gen.addressbook.Model.ContactAtrs>
+    <name>nameX 2</name>
+    <lname>lname 2</lname>
+    <id>0</id>
+    <group>java1</group>
+    <creation>false</creation>
+  </di.gen.addressbook.Model.ContactAtrs>
+  <di.gen.addressbook.Model.ContactAtrs>
+    <name>nameX 3</name>
+    <lname>lname 3</lname>
+    <id>0</id>
+    <group>java1</group>
+    <creation>false</creation>
+  </di.gen.addressbook.Model.ContactAtrs>
+
+</list>

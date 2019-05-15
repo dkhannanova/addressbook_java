@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "name": "nameX 0",
+    "lname": "lname 0",
+    "photo": "src\\test\\resources\\contacts.json",
+    "creation": false,
+    "group": []
+  },
+  {
+    "id": 0,
+    "name": "nameX 1",
+    "lname": "lname 1",
+    "photo": "src\\test\\resources\\contacts.json",
+    "creation": false,
+    "group": []
+  },
+  {
+    "id": 0,
+    "name": "nameX 2",
+    "lname": "lname 2",
+    "photo": "src\\test\\resources\\contacts.json",
+    "creation": false,
+    "group": []
+  }
+]

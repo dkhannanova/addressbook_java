@@ -6,6 +6,12 @@
       <module name="Addressbook_100419.test" target="1.8" />
       <module name="addressbook_java.main" target="1.8" />
       <module name="addressbook_java.test" target="1.8" />
+      <module name="mantis_soap.main" target="1.8" />
+      <module name="mantis_soap.test" target="1.8" />
+      <module name="rest_bugify.main" target="1.8" />
+      <module name="rest_bugify.test" target="1.8" />
+      <module name="rest_github.main" target="1.8" />
+      <module name="rest_github.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

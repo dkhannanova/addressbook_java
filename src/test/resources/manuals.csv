@@ -1,0 +1,51 @@
+/////
+Драйвер JDBC (базы данных) и Hibernate
+
+1.mysql-connector-java (на search.maven.org)
+добавляем в build.gradle
+
+Для применения ORM (объектно реляционное преобразование) можно использовать Hibernate(hibernate.org), подключить зависисмоть в build.gradle
+В resources создать файл hibernate.cfg.xml (содержимое из документации, в файле отредактировать ссылку на драйвер, адреса пароли явки, диалект, привязку к классам с объектами)
+Создать sessionFactory (@BeforeClass поскольку надо делать как предусловие), new MetadataSources - считывается конфиг файл hibernate.cfg.xml
+Далее там, где используется подключение к БД через Hibernate надо будет использовать объект типа sessionFactory
+
+2.Для привязкаи класса объекта к сущности БД необходимо
+ - в конф файле hibernate.cfg.xml вставить путь до класса в теге mapping class, пример <mapping class="di.gen.addressbook.Model.ContactAtrs"/>
+ - в классе указать
+@Entity
+@Table(name="имятаблицы")
+Для каждого атрибута класса указать
+@Column(name="имястолбца")
+Для идентификатора таблицы указать спец.аннотацию @Id
+Пример ниже
+@Entity
+@Table(name = "addressbook")
+public class ContactAtrs {
+  @Id
+  @Column(name="id", nullable = false)
+  private int id;
+  @Column(name = "firstname")
+  public String name;
+  @Column(name = "lastname")
+  public String lname;
+  @Transient
+  private String address;
+Для полей, которые не надо считывать обязательно указать аннотацию   @Transient
+Необходимо в классе объекта обязательно иметь конструктор без атрибутов, без этого не будет работать, пример ниже
+public ContactAtrs(){}
+Для полей, которые в бд имеют другой тип данных выполнять преобразование используя аннотацию @Type(type="тип в БД")
+ Например аттачи: у нас может быть тип File, в базе - строковый.
+В декларации атрибутов объекта поменять на строковый и осуществлять явное преобразование типов в функциях get, set: new File(стринг переменная), переменная.getPath
+
+3. Для создания связей между 2-мя объектами необходимо в Entity указать аннотацию ManyToMany.
+3.1 В ней указать таблицу со связями (JoinTable, столбец - внешний ключи и столбец-ключ связываемого объекта inverseJoinColumns)), создав Set для коллекции связанных объектов
+3.2 Для связанного объекта необхожимо также указать
+пример 3.1
+ @ManyToMany(fetch = FetchType.EAGER)
+  @JoinTable(name = "address_in_groups", joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
+  private Set<GroupAtrs> group = new HashSet<GroupAtrs>();
+пример 3.2
+@ManyToMany(mappedBy = "group", fetch = FetchType.EAGER)
+  private Set<ContactAtrs> contact = new HashSet<ContactAtrs>();
+  где "group" - название связанного Set
+Если есть ошибка StackOverflow, необходимо из HashCode зависимого объекта убрать атрибут Set связанного объекта.

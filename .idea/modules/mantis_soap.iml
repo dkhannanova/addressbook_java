@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="mantis_soap" external.linked.project.path="$MODULE_DIR$/../../../mantis_soap" external.root.project.path="$MODULE_DIR$/../../../mantis_soap" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../mantis_soap">
+      <excludeFolder url="file://$MODULE_DIR$/../../../mantis_soap/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../mantis_soap/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../mantis_soap/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

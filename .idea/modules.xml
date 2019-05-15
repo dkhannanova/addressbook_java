@@ -8,6 +8,15 @@
       <module fileurl="file://$PROJECT_DIR$/addressbook_java.iml" filepath="$PROJECT_DIR$/addressbook_java.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook_java.main.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook_java.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook_java.test.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook_java.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mantis_soap.iml" filepath="$PROJECT_DIR$/.idea/modules/mantis_soap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mantis_soap.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mantis_soap.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mantis_soap.test.iml" filepath="$PROJECT_DIR$/.idea/modules/mantis_soap.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rest_bugify.iml" filepath="$PROJECT_DIR$/.idea/modules/rest_bugify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rest_bugify.main.iml" filepath="$PROJECT_DIR$/.idea/modules/rest_bugify.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rest_bugify.test.iml" filepath="$PROJECT_DIR$/.idea/modules/rest_bugify.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rest_github.iml" filepath="$PROJECT_DIR$/.idea/modules/rest_github.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rest_github.main.iml" filepath="$PROJECT_DIR$/.idea/modules/rest_github.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rest_github.test.iml" filepath="$PROJECT_DIR$/.idea/modules/rest_github.test.iml" />
     </modules>
   </component>
 </project>

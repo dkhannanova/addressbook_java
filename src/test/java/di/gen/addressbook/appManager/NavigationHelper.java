@@ -10,10 +10,15 @@ public class NavigationHelper extends helperBase {
   }
 
   public void goToGroups()  {
+
+    if(isElementPresent(By.tagName("h1"))&& isElementPresent(By.name("new")))
+    {return;}
     click(By.linkText("groups"));
   }
 
   public void goToContacts() {
-    click(By.linkText("add new"));
+    if (isElementPresent(By.id("maintable"))&& (isElementPresent(By.xpath("//input[@value='Delete']"))))
+    {return;}
+    click(By.linkText("home"));
   }
 }

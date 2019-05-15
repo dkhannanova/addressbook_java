@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="Groups" >
+        <classes>
+            <class name="di.gen.addressbook.Tests.CreateGroup" />
+            <class name="di.gen.addressbook.Tests.GroupDeletionTest" />
+        </classes>
+    </test>
+
+    <test name="Contacts">
+        <classes>
+            <class name="di.gen.addressbook.Tests.CreateContactTest"/>
+            <class name="di.gen.addressbook.Tests.ModifyContactTest"/>
+            <class name="di.gen.addressbook.Tests.checkPhones"/>
+            <class name="di.gen.addressbook.Tests.DBConnectTest"/>
+
+         </classes>
+    </test>
+</suite>
+
+

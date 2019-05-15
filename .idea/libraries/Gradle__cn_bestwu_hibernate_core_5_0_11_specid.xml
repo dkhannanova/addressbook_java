@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.bestwu:hibernate-core:5.0.11.specid">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../gradle-5.3/caches/modules-2/files-2.1/cn.bestwu/hibernate-core/5.0.11.specid/c9a36a2eeade4490012220f45cdb797302c3e6df/hibernate-core-5.0.11.specid.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../gradle-5.3/caches/modules-2/files-2.1/cn.bestwu/hibernate-core/5.0.11.specid/dd73e8672b378104dcea3e90e7fc500008139fe1/hibernate-core-5.0.11.specid-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
