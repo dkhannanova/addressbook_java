@@ -3,9 +3,6 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../../../rest_github/out/production/classes" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../rest_github/my-generated-sources">
-      <sourceFolder url="file://$MODULE_DIR$/../../../rest_github/my-generated-sources" isTestSource="false" />
-    </content>
     <content url="file://$MODULE_DIR$/../../../rest_github/src/main">
       <sourceFolder url="file://$MODULE_DIR$/../../../rest_github/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../rest_github/src/main/resources" type="java-resource" />
