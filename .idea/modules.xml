@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Addressbook_100419.iml" filepath="$PROJECT_DIR$/.idea/modules/Addressbook_100419.iml" />
       <module fileurl="file://$PROJECT_DIR$/addressbook_java.iml" filepath="$PROJECT_DIR$/addressbook_java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook_java.main.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook_java.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook_java.test.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook_java.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mantis_soap.iml" filepath="$PROJECT_DIR$/.idea/modules/mantis_soap.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mantis_soap.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mantis_soap.main.iml" />
