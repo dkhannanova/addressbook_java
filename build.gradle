@@ -15,8 +15,6 @@ dependencies {
     implementation 'cn.bestwu:hibernate-core:5.0.11.specid'
     }
 
-jar { from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } } manifest { attributes 'Main-Class': 'Test' }
-}
 
 test {
     useTestNG()}
