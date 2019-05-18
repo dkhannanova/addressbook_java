@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "name": "nameX 0",
+    "name": "name5 0",
     "lname": "lname 0",
     "photo": "src\\test\\resources\\contacts.json",
     "creation": false,
@@ -9,7 +9,7 @@
   },
   {
     "id": 0,
-    "name": "nameX 1",
+    "name": "name5 1",
     "lname": "lname 1",
     "photo": "src\\test\\resources\\contacts.json",
     "creation": false,
@@ -17,7 +17,7 @@
   },
   {
     "id": 0,
-    "name": "nameX 2",
+    "name": "name5 2",
     "lname": "lname 2",
     "photo": "src\\test\\resources\\contacts.json",
     "creation": false,

@@ -63,7 +63,7 @@ public class ContactDataGenerator {
   private static List<ContactAtrs> generate(int count) {
     List<ContactAtrs> contacts = new ArrayList<>();
     for (int i = 0; i < count; i++) {
-      contacts.add(new ContactAtrs(String.format("nameX %s", i), String.format("lname %s", i),new File("src/test/resources/contacts.json")));
+      contacts.add(new ContactAtrs(String.format("name5 %s", i), String.format("lname %s", i),new File("src/test/resources/contacts.json")));
     }
 
     return contacts;

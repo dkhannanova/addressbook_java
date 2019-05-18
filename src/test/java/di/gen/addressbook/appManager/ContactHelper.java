@@ -37,7 +37,7 @@ public class ContactHelper<id, contact> extends helperBase {
 
     if (creation)
     {
-      new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(group.getName());
+      new Select(driver.findElement(By.name("new_group"))).selectByValue((group.getId().toString()));
     }
       else
     {
