@@ -69,7 +69,7 @@ public class CreateContactTest extends TestBase {
     Set<GroupAtrs> groupsset = new HashSet<GroupAtrs>(groups);
     group = groupsset.iterator().next();
     app.getContactHelper().createContactMethod(contact, group);
-    app.getNavigationHelper().goToContacts();
+    //app.getNavigationHelper().goToContacts();
     List<ContactAtrs> after  = app.getDbhelper().contacts();
     int max = 0;
 
@@ -84,12 +84,9 @@ public class CreateContactTest extends TestBase {
     before.add(contact);
     Comparator<? super ContactAtrs> byId= Comparator.comparingInt(ContactAtrs::getId);
     before.sort(byId);
-    //before.stream().map((b)->b.getName().toString()).collect(Collectors.toList());
-    //before.stream().map((b)->b.getlname().toString()).collect(Collectors.toList());
     after.sort(byId);
     Assert.assertEquals(before,after);
     Assert.assertEquals(before.get(before.size()-1).getGroup().toString(),after.get(after.size()-1).getGroup().toString());
-    //Base64.Encoder enc = Base64.getEncoder();
 
     System.out.println(encoder("src/test/resources/contacts.json"));
     String[] words = (after.get(after.size()-1).getPhoto().toString()).split(":");
