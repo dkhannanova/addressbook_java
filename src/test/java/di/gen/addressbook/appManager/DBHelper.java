@@ -26,7 +26,7 @@ public class DBHelper {
   public List<ContactAtrs> contacts() {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
-    List<ContactAtrs> result = session.createQuery("from ContactAtrs").list();
+    List<ContactAtrs> result = session.createQuery("from ContactAtrs  where deprecated='0000-00-00'").list();
     session.getTransaction().commit();
     session.close();
     return (result);
@@ -35,7 +35,7 @@ public class DBHelper {
   public List<GroupAtrs> groups() {
     Session session1 = sessionFactory.openSession();
     session1.beginTransaction();
-    List<GroupAtrs> result = session1.createQuery("from GroupAtrs").list();
+    List<GroupAtrs> result = session1.createQuery("from GroupAtrs where deprecated='0000-00-00'").list();
     session1.getTransaction().commit();
     session1.close();
     return (result);
