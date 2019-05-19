@@ -14,10 +14,8 @@ dependencies {
     implementation 'mysql:mysql-connector-java:8.0.16'
     implementation 'cn.bestwu:hibernate-core:5.0.11.specid'
     }
-
-task testAll(type:Test){ useTestNG {
-    suites 'C:/Dev/addressbook_java/src/test/resources/testng.xml'
-}
+test{
+    useTestNG() 
     if (project.hasProperty('browser'))
     {systemProperty 'browser', "${browser}"
     }
