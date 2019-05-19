@@ -15,8 +15,7 @@ dependencies {
     implementation 'cn.bestwu:hibernate-core:5.0.11.specid'
     }
 
-task allTests(type:Test)
-{ useTestNG() {
+task allTests(type:Test){ useTestNG {
     suites 'C:/Dev/addressbook_java/src/test/resources/testng.xml'
 }
     if (project.hasProperty('browser'))
