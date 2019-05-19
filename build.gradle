@@ -15,7 +15,7 @@ dependencies {
     implementation 'cn.bestwu:hibernate-core:5.0.11.specid'
     }
 
-task allTests(type:Test){ useTestNG {
+task testAll(type:Test){ useTestNG {
     suites 'C:/Dev/addressbook_java/src/test/resources/testng.xml'
 }
     if (project.hasProperty('browser'))
@@ -23,4 +23,5 @@ task allTests(type:Test){ useTestNG {
     }
     if (project.hasProperty('target'))
     {systemProperty 'target', "${target}"
-    }}
+    }
+}
