@@ -5,7 +5,6 @@ import di.gen.addressbook.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.sql.Array;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -25,7 +24,7 @@ public class checkPhones extends TestBase {
   private String mergePhones(ContactAtrs contact) {
     return  Arrays.asList(contact.phone, contact.mobile, contact.work)
             .stream().filter((s)->!s.equals(""))
-            //.map(checkPhones::clean)
+            .map(checkPhones::clean)
             .collect(Collectors.joining("\n"));
   }
 

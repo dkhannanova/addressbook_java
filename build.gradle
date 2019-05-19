@@ -17,7 +17,7 @@ dependencies {
 
 task allTests(type:Test)
 { useTestNG() {
-    suites 'C:\\Dev\\addressbook_java\\src\\test\\resources\\testng.xml'
+    suites 'C:/Dev/addressbook_java/src/test/resources/testng.xml'
 }
     if (project.hasProperty('browser'))
     {systemProperty 'browser', "${browser}"
