@@ -1,14 +1,17 @@
 package di.gen.addressbook;
 
+import di.gen.addressbook.Tests.MyTestListener;
 import di.gen.addressbook.appManager.ApplicationManager;
 import org.openqa.selenium.remote.BrowserType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.ITestContext;
 import org.testng.annotations.*;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
+@Listeners(MyTestListener.class)
 public class TestBase {
 
   //создаем логгер привязав его к testbase чтобы было видно откуда строка лога создается
@@ -17,8 +20,9 @@ public class TestBase {
 
   //Запуск и закрытие  сеанса веб-браузера перед каждым сьютом
   @BeforeSuite
-  public void setUp() throws Exception {
+  public void setUp(ITestContext context) throws Exception {
     app.init();
+    context.setAttribute("app",app);
   }
 
   @AfterSuite

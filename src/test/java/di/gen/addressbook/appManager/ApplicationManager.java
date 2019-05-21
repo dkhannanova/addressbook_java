@@ -107,5 +107,9 @@ public class ApplicationManager {
     return dbhelper;
   }
 
+  public byte[] takeScreenshot(){
+    return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+  }
+
 
 }
