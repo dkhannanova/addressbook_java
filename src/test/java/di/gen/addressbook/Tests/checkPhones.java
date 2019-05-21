@@ -3,13 +3,14 @@ package di.gen.addressbook.Tests;
 import di.gen.addressbook.Model.ContactAtrs;
 import di.gen.addressbook.TestBase;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
 public class checkPhones extends TestBase {
 
-
+@Test
   public void testCheckPhones()
   {
     app.getNavigationHelper().goToContacts();
